@@ -17,12 +17,15 @@
 		<div class="row">
 			<div class="col-md-4" ng-repeat="video in videosListNew">
 				<div class="card mb-4 shadow-sm  bg-dark">
-
+                         	        <div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+							src="{{video.videoName | trustUrl}}" allowfullscreen></iframe>
+					</div>
 					
-					<video controls="controls" name="Video Name"
+					<!--<video controls="controls" name="Video Name"
 						src="{{video.videoName | trustUrl}}">
 					</video>
-					<!-- <div >
+					 <div >
 						<a ng-click="playVideo();"><img class="img-fluid img-thumbnail" src="./images/cake6.jpg" alt="Chania"></a>
 					</div> -->
 					<!--                
