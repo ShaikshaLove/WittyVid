@@ -1,0 +1,81 @@
+
+<main role="main">
+<div style="margin-top: 30px" class="container">
+
+
+	<div ng-show="myValue">
+		<app-root>
+		<div class="centered">
+			<div class="loader">Loading...</div>
+		</div>
+		</app-root>
+	</div>
+
+	<div class="shadow-lg p-4 mb-4 bg-white border border-primary rounded">
+		<h4 class="text-center text-dark">Register A Product</h4>
+         <hr color=orange>
+		<div ng-show="showMessage">
+			<div class="alert alert-info alert-dismissible fade show">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<p class="text-center"><strong>Info!&nbsp;</strong>{{message}}</p>
+			</div>
+			
+		</div>
+
+		<div class="row">
+			<div class="col-sm">
+				<div class="form-group">
+					<label>Product Name:</label> <input class="form-control"
+						type="text" ng-model="product.productName" />
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="form-group">
+					<label>Manufacturer:</label> <input class="form-control"
+						type="text" ng-model="product.manufacturer" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm">
+				<div class="form-group">
+					<label>MRP:</label> <input class="form-control" type="text"
+						ng-model="product.mrp" />
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="form-group">
+					<label>Current Cost:</label> <input class="form-control"
+						type="text" ng-model="product.currentCost" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm">
+				<div class="form-group">
+					<label>Description:</label>
+					<textarea class="form-control" ng-model="product.description"></textarea>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="form-group">
+					<label>Choose an image :</label> <input
+						class="form-control-file border" type="file" file-model="myFile" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm">
+				<div class="form-group">
+					<input class="btn btn-warning btn-block" type="submit"
+						ng-click="saveProduct()" value="Register" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</main>

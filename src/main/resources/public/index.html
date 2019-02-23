@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" ng-app="WittyVid">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.8.5">
+<title>WittyVid</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="sty lesheet" href="./css/album.css" />
+<link rel="stylesheet" href="./css/carousel.css" />
+<link rel="stylesheet" href="./css/loader.css" />
+
+
+<script src="./js/vendor/angular.js"></script>
+<script src="./js/vendor/angular-route.js"></script>
+
+
+<script src="./js/app/video/video.module.js"></script>
+<script src="./js/app/video/directives/formdata.js"></script>
+<script src="./js/app/video/filters/video.filter.js"></script>
+<script src="./js/app/video/service/video.service.js"></script>
+<script src="./js/app/video/controllers/video-list.controller.js"></script>
+<script src="./js/app/video/controllers/video-uploader.controller.js"></script>
+<script src="./js/app/app.js"></script>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+</style>
+</head>
+
+<body>
+	 <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"
+                style="font-style: inherit; font-family: Verdana, Geneva, Tahoma, sans-serif">WittyVid</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#/upload">Upload a comical video</a>
+                </li> 
+            </ul> 
+
+        </nav>
+    </header>
+
+    
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+        <a class="navbar-brand" href="#"
+            style="font-style: italic; font-family:'Times New Roman', Times, serif"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WittyVid.in,originated by shaiksha</a>
+                </li> 
+            </ul>   
+
+    </nav>
+
+
+
+	  <div ng-view="">
+		
+	  </div>
+	
+</html>

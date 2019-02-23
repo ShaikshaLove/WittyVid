@@ -1,0 +1,40 @@
+
+<div style="margin-top: 20px" id="items" class="">
+	<div class="container">
+		<div ng-show="myValue">
+			<app-root>
+			<div class="centered">
+				<div class="spinner-grow text-muted"></div>
+				<div class="spinner-grow text-primary"></div>
+				<div class="spinner-grow text-success"></div>
+				<div class="spinner-grow text-info"></div>
+				<div class="spinner-grow text-warning"></div>
+			</div>
+			</app-root>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-4" ng-repeat="video in videosListNew">
+				<div class="card mb-4 shadow-sm  bg-dark">
+
+					
+					<video controls="controls" name="Video Name"
+						src="{{video.videoName | trustUrl}}">
+					</video>
+					<!-- <div >
+						<a ng-click="playVideo();"><img class="img-fluid img-thumbnail" src="./images/cake6.jpg" alt="Chania"></a>
+					</div> -->
+					<!--                
+					<div class="card-body bg-light">
+						<p>{{video.description}}</p>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+</div>

@@ -1,0 +1,67 @@
+
+<div style="margin-top: 50px" id="items" class="">
+	<div class="container">
+		<!-- <div ng-show="myValue">
+			<app-root>
+			<div class="centered">
+				<div class="loader"></div>
+				<p>Uploading your video...</p>
+
+			</div>
+			</app-root>
+		</div> -->
+
+
+		<div ng-hide="myValue" class="mx-auto" style="width: auto">
+
+			<div ng-show="showMessage">
+				<div class="alert alert-info alert-dismissible fade show">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<p class="text-center">
+						<strong>Info!&nbsp;</strong>{{message}}
+					</p>
+				</div>
+
+			</div>
+
+			<div
+				class="shadow-lg p-4 mb-4 bg-white bg-warning border border-warning rounded">
+
+				<div class="row">
+					<div class="col-sm">
+						<div class="form-group">
+							<label>Select Video</label> <input
+								class="form-control-file border" type="file" name="video"
+								file-model="myFile">
+							<p class="text-danger">Size should be less than 30 MB
+							<p>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="form-group">
+							<label>Description</label>
+							<textarea class="form-control" ng-model="description"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<div class="form-group">
+							<button ng-hide="uploading" type="submit" class="btn btn-warning "
+								ng-click="upload();">Upload</button>
+
+
+							<button ng-show="uploading"class="btn btn-success" disabled>
+								<span class="spinner-border spinner-border-sm"></span>
+								Uploading...
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
