@@ -2,7 +2,7 @@ angular.module("VideoModule").service("VideoServices",function($http){
               
 	    this.getVideos=function (){
 	    	console.log("fetching videos")
-                    return $http.get("https://s3food-registration-service.herokuapp.com/api/videos");
+                    return $http.get("https://wittyvid.herokuapp.com/api/videos");
                };
           
               this.saveVideo=function(video,description){
@@ -10,7 +10,7 @@ angular.module("VideoModule").service("VideoServices",function($http){
             	   fd.append("video",video);
             	   fd.append("description",description)
             	   console.log(fd);
-            	  return $http.post("https://s3food-registration-service.herokuapp.com/api/videos",fd,{
+            	  return $http.post("https://wittyvid.herokuapp.com/api/videos",fd,{
                        transformRequest: angular.identity,
                        headers: {'Content-Type': undefined}
                    });
